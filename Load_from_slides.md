@@ -1,16 +1,18 @@
+--> This first section displays how to install all the packages necessary to create images.
+
 %%capture
-apt-get install poppler-utils
-pip install pdf2image
-
-...
-...python 
-
+!apt-get install poppler-utils
+!pip install pdf2image
 from pdf2image import convert_from_path
 import requests
 import matplotlib.pyplot as plt
 import numpy as np
 from skimage.io import imread
 from skimage.transform import resize
+...
+...python 
+
+--> All the essential items needed to run the slides in the format that is wanted
 
 ''' pyhton
 def plot(x):
@@ -40,6 +42,9 @@ def get_slides(url):
 '''
 Data Deck = Cats_Dogs_Deck = "https://docs.google.com/presentation/d/1lyE52a0yLCu9iUiKeFmdKayGJhu2Z6fyToXEMKeigoY/edit#slide=id.p"
 
+--> This next line of code gives you the images from the slides.
+
 image_list = get_slides(Cats_Dogs_Deck)
+
 
 
