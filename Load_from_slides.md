@@ -35,6 +35,8 @@ def get_slides(url):
     images = convert_from_path('file.pdf', 500)
     return images
 
+# Load slides in to create a link
+
 '''
 Data Deck = Cats_Dogs_Deck = "https://docs.google.com/presentation/d/1lyE52a0yLCu9iUiKeFmdKayGJhu2Z6fyToXEMKeigoY/edit#slide=id.p"
 
