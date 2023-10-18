@@ -8,6 +8,18 @@ import matplotlib.pyplot as plt
 image_url = 'https://imageio.forbes.com/specials-images/imageserve/5d6586c068cb0a0008c08f54/Michael-Jordan/0x0.jpg?format=jpg&height=1963&width=1963'
 response = requests.get(image_url)
 image = Image.open(BytesIO(response.content))
+### Import Libraries
+
+- `import requests`: This line imports the requests library, commonly used for making HTTP requests, such as downloading content from a URL.
+- `from PIL import Image`: This line imports the Image module from the Python Imaging Library (PIL), used for working with images, including opening, manipulating, and displaying them.
+- `from io import BytesIO`: This line imports the BytesIO module from the io library, allowing for creating an in-memory binary stream for working with data.
+- `import matplotlib.pyplot as plt`: This line imports the pyplot module from the matplotlib library, used for data visualization, including displaying images.
+
+```python
+import requests
+from PIL import Image
+from io import BytesIO
+import matplotlib.pyplot as plt
 
 # Display the image
 plt.imshow(image)
